@@ -1,0 +1,416 @@
+/* --------------------------------- CSS RESET -------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/* --------------------------------- HEADER -------------------------------- */
+
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: end;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+header ul li a{
+    color: white;
+    padding: 7px 20px;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+}
+
+header ul li a:hover{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+header img{
+    width: 40px;
+    position: absolute;
+    left: 15px;
+}
+
+/* --------------------------------- LANDING -------------------------------- */
+
+#landing{
+    background-image: linear-gradient(170deg, blue 40%, rgb(135, 40, 158));
+    display: flex;
+    padding: 50px;
+}
+
+#landing img{
+    padding: 40px;
+    width: 467px;
+}
+
+h1{
+    font-size: 50px;
+    background: -webkit-linear-gradient(-80deg,yellow 30%, rgb(255, 166, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: rgb(228, 228, 228);
+    margin-bottom: 20px;
+}
+
+#landing p{
+    color: rgb(228, 228, 228);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#links-download{
+    margin: 35px 0px 0px 35px;
+}
+
+
+/* --------------------------------------INSTRUCTIONS------------------------------ */
+
+#instructions{
+    padding: 60px;
+    background-color:rgb(228, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px inset;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+.tit{
+    display: inline-block;
+    font-weight: bolder;
+    padding: 10px 0px
+}
+
+.inst{
+    border-bottom: 1px solid rgb(245, 26, 234);
+    padding: 20px;
+    font-size: large;
+}
+
+/* ----------------------------------------ACCOUNT----------------------------------- */
+
+#account{
+    background-image: linear-gradient(90deg,#FF70FE, rgb(228, 228, 228) 50%);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#account img{
+    text-align: center;
+    width: 250px;
+}
+
+#account h3{
+    color: #FF70FE;
+    text-decoration: underline;
+}
+
+#account li{
+    padding: 18px 0px;
+    list-style-type: disc;
+}
+
+/* ----------------------------------------CARD------------------------------------- */
+
+#card{
+    background-image: linear-gradient(270deg,#ec8f25, rgb(228, 228, 228) 50%);
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#card img{
+    text-align: center;
+    width: 400px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+#card h3{
+    color: #EB9636;
+    text-decoration: underline;
+}
+
+#card h3 p{
+    display: inline;
+}
+
+
+#card li{
+    list-style-type: disc;
+    padding: 18px 0px;
+}
+
+#content{
+    max-width: 55%;
+}
+
+/* ------------------------------------SAFETY----------------------------- */
+
+#safety{
+    background-color:rgb(228, 228, 228);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+#safety div{
+    padding: 10px;
+    margin: 15px;
+    display: inline;
+    max-width: 250px;
+    border: 3px solid rgb(29, 20, 158);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-bottom: 70px;
+}
+
+#safety-h3{
+    background-color:rgb(228, 228, 228) ;
+    padding: 20px;
+}
+
+
+#safety img{
+    width: auto;
+    height: 55px;
+}
+
+/* ------------------------------------------FOOTER---------------------------------- */
+
+footer{
+    padding: 30px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#hbicon{
+    display:none;
+}
+
+#empresa{
+    display: flex;
+}
+
+#empresa img{
+    width: 100px;
+}
+
+#direitos{
+    padding-top: 22px;
+}
+
+h6{
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+#redes-sociais img{
+    margin: 10px;
+    width: 40px;
+    margin-left: 15px;
+}
+
+h5{
+    font-weight: 550;
+    padding: 5px;
+}
+
+footer a{
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 2;
+}
+
+#third a:hover{
+    text-decoration: underline;
+}
+
+#l{
+    display: flex;
+    flex-direction: column;
+}
+
+#apple{
+    margin-top: -15px;
+}
+
+#android{
+    padding: 0px;
+    margin-left: -10px;
+}
+
+.midias-img{
+    width: 100px;
+    margin: 5px;
+}
+
+#second a{
+    padding: 0px;
+}
+
+/* ---------------------------------MOBILE------------------------------- */
+/* ---------------------------------MOBILE------------------------------- */
+/* ---------------------------------MOBILE------------------------------- */
+
+
+@media (max-width: 870px){
+    
+    #landing{
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    #landing img{
+        margin: auto;
+        padding: 0px;
+        width: 35vh;
+    }
+
+    #links-download{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #account{
+        background-image: linear-gradient(180deg,#FF70FE, rgb(228, 228, 228) 50%);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #account img{
+        width: 30vh;
+    }
+
+    #account li{
+        font-size: 16px;
+        line-height: normal;
+        padding: 10px;
+        list-style-position: inside;
+    }
+
+    #card{
+        background-image: linear-gradient(180deg,#ec8f25, rgb(228, 228, 228) 50%);
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #card img{
+        width: 40vh;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #card li{
+        font-size: 16px;
+        line-height: normal;
+        padding: 10px;
+        list-style-position: inside;
+        margin: 0px;
+    }
+
+    #content{
+        max-width: 100%;
+    }
+
+    #safety{
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+
+
+    #safety div{
+        margin: 15px;
+    }
+
+    footer{
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+
+    footer h6{
+        font-size: 8px;
+    }
+
+    footer div{
+        margin:auto
+    }
+}
+
+#mobile{display: none;}
+
+@media (max-width: 430px){
+
+    #mobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: blue;
+        align-items: center;
+    }
+
+    #mobile img{
+        padding: 5px;
+        width: 40px;
+    }
+
+    header{display: none;}
+
+    #mobile ul{
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 0, 160);
+        top: -1000px;
+        width: 100%;
+        margin: 0px;
+        z-index: 9;
+        transition: all 0.4s;
+    }
+
+    #mobile li{
+        color: white;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 38, 255, 0.548);
+    }
+
+    #mobile li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 200px 10px 10px;
+    }
+
+}

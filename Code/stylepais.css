@@ -1,0 +1,372 @@
+/* --------------------------------- CSS RESET -------------------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+/* --------------------------------- HEADER -------------------------------- */
+
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: end;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+header ul li a{
+    color: white;
+    padding: 7px 20px;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+}
+
+header ul li a:hover{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+header img{
+    width: 40px;
+    position: absolute;
+    left: 15px;
+}
+
+#mobile{display: none;}
+
+#hbicon{
+    display:none;
+}
+@media (max-width: 430px){
+
+    #mobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: blue;
+        align-items: center;
+    }
+
+    #mobile img{
+        padding: 5px;
+        width: 40px;
+    }
+
+    header{display: none;}
+
+    #mobile ul{
+        display: block;
+        position: absolute;
+        background-color: rgb(0, 0, 160);
+        top: -1000px;
+        width: 100%;
+        margin: 0px;
+        z-index: 9;
+        transition: all 0.4s;
+    }
+
+    #mobile li{
+        color: white;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 38, 255, 0.548);
+    }
+
+    #mobile li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 200px 10px 10px;
+    }
+
+}
+
+/* --------------------------------------INSTRUCTIONS------------------------------ */
+
+#instructions{
+    padding: 60px;
+    background-color:rgb(228, 228, 228);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px inset;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+}
+
+.tit{
+    display: inline-block;
+    font-weight: bolder;
+    padding: 10px 0px
+}
+
+.inst{
+    border-bottom: 1px solid rgb(245, 26, 234);
+    padding: 20px;
+    font-size: large;
+}
+
+/* ------------------------------------SAFETY----------------------------- */
+
+#safety{
+    background-color:rgb(228, 228, 228);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+#safety div{
+    padding: 10px;
+    margin: 15px;
+    display: inline;
+    max-width: 250px;
+    border: 3px solid rgb(29, 20, 158);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-bottom: 70px;
+}
+
+#safety-h3{
+    background-color:rgb(228, 228, 228) ;
+    padding: 20px;
+}
+
+
+#safety img{
+    width: auto;
+    height: 55px;
+}
+
+/* ------------------------------------------FOOTER---------------------------------- */
+
+footer{
+    padding: 30px;
+    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#hbicon{
+    display:none;
+}
+
+#empresa{
+    display: flex;
+}
+
+#empresa img{
+    width: 100px;
+}
+
+#direitos{
+    padding-top: 22px;
+}
+
+h6{
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+#redes-sociais img{
+    margin: 10px;
+    width: 40px;
+    margin-left: 15px;
+}
+
+h5{
+    font-weight: 550;
+    padding: 5px;
+}
+
+footer a{
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 2;
+}
+
+#third a:hover{
+    text-decoration: underline;
+}
+
+#l{
+    display: flex;
+    flex-direction: column;
+}
+
+#apple{
+    margin-top: -15px;
+}
+
+#android{
+    padding: 0px;
+    margin-left: -10px;
+}
+
+.midias-img{
+    width: 100px;
+    margin: 5px;
+}
+
+#second a{
+    padding: 0px;
+}
+
+@media (max-width: 870px){
+
+    #safety{
+        flex-wrap: wrap;
+        padding-bottom: 15px;
+    }
+
+
+    #safety div{
+        margin: 15px;
+    }
+
+    footer{
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+
+    footer h6{
+        font-size: 8px;
+    }
+
+    footer div{
+        margin:auto
+    }
+
+}
+
+/* ------------------------------------lANDING---------------------------- */
+
+
+#landing{
+    background-image: linear-gradient(170deg, blue 40%, rgb(135, 40, 158));
+    color: rgb(228, 228, 228);
+    display: flex;
+    padding: 50px;
+    line-height: 2;
+}
+
+h1{
+    font-size: 47px;
+    margin: 20px 20px 20px 0px;
+    color: rgb(255, 230, 0);
+}
+
+#landing img{
+    margin: 0px 0px 68px 60px;
+    width: 400px;
+}
+
+#landing p{
+    font-size: 18px;
+}
+
+@media (max-width: 870px){
+    
+    #landing{
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    #landing img{
+        margin: auto;
+        padding: 0px;
+        width: 35vh;
+    }
+}
+
+/* --------------------------------------VANTAGENS------------------------------ */
+
+#vantagens{
+    background-image: url(../girl-ge7b3eb838_1280.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+#van-cont{
+    padding: 35px 5px;
+    display: inline-block;
+    background-color: rgb(228, 228, 228);
+    font-size: 18px;
+}
+
+#vantagens h2{
+    font-size: 36px;
+    text-align: center;
+    margin: 20px;
+}
+
+#vantagens p{
+    padding: 20px;
+}
+
+@media (max-width: 1080px){
+    #vantagens{
+        background-color: rgb(228, 228, 228);
+        background-image:none;
+        text-align: center;
+    }
+}
+
+/* --------------------------------------RESP APP------------------------------ */
+
+
+#resp-app{
+    padding: 50px;
+    background-image: linear-gradient(90deg,#fbe629, rgb(228, 228, 228) 50%);
+    display: flex;
+    text-align: center;
+}
+
+#resp-app img{
+    width: 200px;
+}
+
+#app-cont{
+    line-height: 2;
+    margin: auto;
+    text-align: center;
+}
+
+#app-cont h3{
+    margin: 20px;
+}
+
+@media (max-width: 700px){
+
+    #resp-app{
+        background-image: linear-gradient(180deg,#fbe629, rgb(228, 228, 228) 50%);
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #resp-app img{
+        width: 150px;
+    }
+
+}
